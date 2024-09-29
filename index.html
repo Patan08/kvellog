@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKElLOG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="head-container">
+                <h1>VKELLOG</h1>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="receipt.html">RECIPES</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="contactUs.html">CONTACT US</a></li>
+
+                </ul>
+                <ul>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                    <li class="hideOnMobile"><a href="#">HOME</a></li>
+                    <li class="hideOnMobile"><a href="product.html">PRODUCTS</a></li>
+                    <li class="hideOnMobile"><a href="receipt.html">RECIPES</a></li>
+                    <li class="hideOnMobile"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="hideOnMobile"><a href="contactUs.html">CONTACT US</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Content -->
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="homeimage/Photo by Getty Images on Unsplash.jpg" style="width:100%">
+            <div class="content">
+                <div class="title text">KVELLOG RESTAURANT</div>
+
+                <div class="des text">
+                    "Start Your Day Right with VKellogg's – Nourishing Every Morning!"
+                </div>
+
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="homeimage/Photography for Your Business.jpg" style="width:100%">
+            <div class="content">
+                <div class="title text">Explore Our Best Sellers</div>
+
+                <div class="des text">
+                    Discover our curated selection of best-selling products, carefully crafted to provide you with the
+                    nourishment and energy you need to tackle your day head-on. From our iconic Corn Flakes to our
+                    indulgent Granola Crunch, there's something for everyone at VKellogg's.
+                </div>
+                <div class="buttons">
+                    <button><a href="product.html" style="text-decoration: none;">See More</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="homeimage/Tất Tật Điều Cần Biết Về Nguyên Liệu Bánh Trung Thu.jpg" style="width:100%">
+            <div class="content">
+                <div class="title text">Delightful Recipes Await</div>
+                <div class="des text">
+                    Looking for culinary inspiration? Explore our collection of mouthwatering recipes that showcase the
+                    versatility of VKellogg's products. Whether you're in the mood for a quick breakfast or a satisfying
+                    snack, our recipes are sure to delight your taste buds and keep you coming back for more.
+                </div>
+                <div class="buttons">
+                    <button><a href="receipt.html" style="text-decoration: none;">See More</a></button></button>
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <footer>
+
+        <div class="social-media">
+            <a href="#"><img src="images/youtube.png" alt="Facebook"></a>
+            <h4>KVELLOG.CH</h4>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <h4>@KVELLOGS</h4>
+            <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+            <h4>@restaurantKVELLOG</h4>
+        </div>
+        <div class="contact-info">
+            <p>Alamat: 1234 Battle Creek, MI, USA</p>
+            <p>Email: contact@vkelloggs.com</p>
+            <p>Telepon: +1 800 123 4567</p>
+        </div>
+    </footer>
+
+
+    <script src="sidebar.js"></script>
+    <script src="carousel.js"></script>
+</body>
+
+</html>

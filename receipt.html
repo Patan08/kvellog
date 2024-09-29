@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="receipt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="head-container">
+                <h1>VKELOG</h1>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                                viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                            </svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="receipt.html">RECIPES</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="contactUs.html">CONTACT US</a></li>
+
+                </ul>
+                <ul>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                    <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                    <li class="hideOnMobile"><a href="product.html">PRODUCTS</a></li>
+                    <li class="hideOnMobile"><a href="receipt.html">RECIPES</a></li>
+                    <li class="hideOnMobile"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="hideOnMobile"><a href="contactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <h1 class="judul">RECIPES</h1>
+        <hr>
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class="contentcard">
+                        <h2>01</h2>
+                        <h3>Corn Flakes Breakfast
+                        </h3>
+                        <p>Start your day with a classic breakfast featuring Kellogg's Corn Flakes.</p>
+                        <button onclick="showDetail1()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="contentcard">
+                        <h2>02</h2>
+                        <h3>Granola Parfait</h3>
+                        <p>Indulge in a layered delight with Kellogg's Granola Parfait. 
+                        </p>
+                        <button onclick="showDetail2()">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <div class="contentcard">
+                        <h2>03</h2>
+                        <h3>Savory Oatmeal</h3>
+                        <p>Explore a savory twist on traditional oatmeal with VKellogg's Savory Oatmeal. .</p>
+                        <button onclick="showDetail3()">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="contentcard">
+                        <h2>03</h2>
+                        <h3>coming soon</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
+                            labore inventore?</p>
+                        <button disabled>Coming Soon....</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="detail">
+            <div class="box-detail1">
+                <div class="judul">
+                    <button class="exit" onclick="hideDetail()">X</button>
+                    <h1 class="namaResep"> Kellogg's Granola Parfait </h1>
+                </div>
+                <hr>
+                <div class="detailResep">
+                    <img src="reseppicture/Yogurt Parfaits_ Healthy Recipes with Fruit & Granola _ PRANCIER.jpg" alt=""
+                        class="gambarDetail">
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup Kellogg's Granola Crunch</li>
+                        <li>1 cup Greek yogurt</li>
+                        <li>1/2 cup mixed fresh fruits (such as berries, kiwi, and mango)</li>
+                        <li>2 tablespoons honey or maple syrup</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>In a glass or bowl, layer half of the granola, followed by half of the Greek yogurt.</li>
+                        <li>Add a layer of mixed fruits.</li>
+                        <li>Repeat the layering with the remaining granola, yogurt, and fruits.</li>
+                        <li>Drizzle honey or maple syrup on top.</li>
+                        <li>Serve immediately or refrigerate for up to an hour for a chilled parfait.</li>
+                    </ul>
+                    <p><strong>Serving Size:</strong> 1 parfait</p>
+                    <p><strong>Preparation Time:</strong> 10 minutes</p>
+                </div>
+            </div>
+            <div class="box-detail2">
+                <div class="judul">
+                    <button class="exit" onclick="hideDetail()">X</button>
+                    <h1 class="namaResep"> Classic Kellogg's Corn Flakes Breakfast </h1>
+                </div>
+                <hr>
+                <div class="detailResep">
+                    <img src="reseppicture/Cascadian Farm Organic Honey Oat Crunch Breakfast Cereal 13_5 oz.jpg" alt=""
+                        class="gambarDetail">
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup Kellogg's Corn Flakes</li>
+                        <li>1/2 cup milk (or plant-based milk)</li>
+                        <li>1/2 banana, sliced</li>
+                        <li>1/4 cup fresh berries (strawberries, blueberries, or raspberries)</li>
+                        <li>1 tablespoon honey (optional)</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>Pour Kellogg's Corn Flakes into a bowl.</li>
+                        <li>Add milk to the bowl.</li>
+                        <li>Top with sliced banana and fresh berries.</li>
+                        <li>Drizzle honey over the top if desired.</li>
+                        <li>Serve immediately and enjoy!</li>
+                    </ul>
+                    <p><strong>Serving Size:</strong> 1 bowl</p>
+                    <p><strong>Preparation Time:</strong> 5 minutes</p>
+                </div>
+            </div>
+            <div class="box-detail3">
+                <div class="judul">
+                    <button class="exit" onclick="hideDetail()">X</button>
+                    <h1 class="namaResep"> VKellogg's Savory Oatmeal </h1>
+                </div>
+                <hr>
+                <div class="detailResep">
+                    <img src="reseppicture/11 Healthy Oatmeal Recipes for a Hearty and Nutritious Breakfast.jpg" alt=""
+                        class="gambarDetail">
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup Kellogg's Oat Flakes</li>
+                        <li>2 cups water or vegetable broth</li>
+                        <li>1/2 avocado, sliced</li>
+                        <li>1 poached egg</li>
+                        <li>1/4 cup cherry tomatoes, halved</li>
+                        <li>1 tablespoon chopped chives</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ul>
+                        <li>In a pot, bring water or vegetable broth to a boil.</li>
+                        <li>Add Kellogg's Oat Flakes and reduce the heat to simmer.</li>
+                        <li>Cook for 5-7 minutes, stirring occasionally until the oats are tender and the liquid is
+                            absorbed.</li>
+                        <li>Transfer the cooked oats to a bowl.</li>
+                        <li>Top with sliced avocado, poached egg, cherry tomatoes, and chopped chives.</li>
+                        <li>Season with salt and pepper to taste.</li>
+                        <li>Serve immediately and enjoy a healthy, savory breakfast!</li>
+                    </ul>
+                    <p><strong>Serving Size:</strong> 1 bowl</p>
+                    <p><strong>Preparation Time:</strong> 15 minutes</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="social-media">
+            <a href="#"><img src="images/youtube.png" alt="Facebook"></a>
+            <h4>KVELLOG.CH</h4>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <h4>@KVELLOGS</h4>
+            <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+            <h4>@restaurantKVELLOG</h4>
+        </div>
+
+        <div class="contact-info">
+            <p>Alamat: 1234 Battle Creek, MI, USA</p>
+            <p>Email: contact@vkelloggs.com</p>
+            <p>Telepon: +1 800 123 4567</p>
+        </div>
+    </footer>
+
+    <script src="receipt.js"></script>
+    <script src="sidebar.js">
+    </script>
+</body>
+
+</html>

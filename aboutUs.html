@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="head-container">
+                <h1>VKELLOG</h1>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="receipt.html">RECIPES</a></li>
+                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="contactUs.html">CONTACT US</a></li>
+
+                </ul>
+                <ul>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                    <li class="hideOnMobile"><a href="product.html">PRODUCTS</a></li>
+                    <li class="hideOnMobile"><a href="receipt.html">RECIPES</a></li>
+                    <li class="hideOnMobile"><a href="aboutUs.html">ABOUT US</a></li>
+                    <li class="hideOnMobile"><a href="contactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2 class="Banner">About Us</h2>
+            <hr>
+            <article>
+                <h2 class="subJudul">Our History</h2>
+                <p class="desc"> VKellogg’s is a multinational company renowned for its production of breakfast foods and snacks. Founded by Will Keith Kellogg in 1906, the company is headquartered in Battle Creek, Michigan, United States. VKellogg's is well-known as one of the major cereal manufacturers worldwide and boasts a long history of food product innovation.</p>
+            </article>
+            <article>
+                <h2 class="subJudul">Our Mission</h2>
+                <p class="desc">Our mission is to offer high-quality, great-tasting food products that bring joy and nutrition to our customers every day. We are committed to innovation, sustainability, and community engagement.</p>
+               
+            </article>
+            <article>
+                <h2 class="subJudul">Our Values</h2>
+                <p class="desc">We believe in integrity, accountability, and a passion for excellence. Our values guide us in everything we do, from sourcing ingredients to delivering products to your table.</p>
+                
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        
+        <div class="social-media">
+            <a href="#"><img src="images/youtube.png" alt="Facebook"></a>
+            <h4>KVELLOG.CH</h4>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <h4>@KVELLOGS</h4>
+            <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+            <h4>@restaurantKVELLOG</h4>
+        </div>
+        <div class="contact-info">
+            <p>Alamat: 1234 Battle Creek, MI, USA</p>
+            <p>Email: contact@vkelloggs.com</p>
+            <p>Telepon: +1 800 123 4567</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
